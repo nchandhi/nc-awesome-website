@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - My GitHub Pages Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">My Website</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Let's connect and collaborate</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content-section">
+            <h2>💬 Let's Talk</h2>
+            <p>
+                I'm always interested in hearing about new projects, opportunities, or just having
+                a chat about technology and development. Feel free to reach out through any of the
+                channels below.
+            </p>
+        </section>
+
+        <section class="contact-grid">
+            <div class="contact-info">
+                <h3>📫 Contact Information</h3>
+                
+                <div class="contact-method">
+                    <h4>📧 Email</h4>
+                    <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+                    <p class="contact-desc">Best for detailed inquiries and project discussions</p>
+                </div>
+
+                <div class="contact-method">
+                    <h4>💼 LinkedIn</h4>
+                    <p><a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+                    <p class="contact-desc">Connect professionally and view my experience</p>
+                </div>
+
+                <div class="contact-method">
+                    <h4>🐙 GitHub</h4>
+                    <p><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+                    <p class="contact-desc">Check out my code and open source contributions</p>
+                </div>
+
+                <div class="contact-method">
+                    <h4>🐦 Twitter</h4>
+                    <p><a href="https://twitter.com/yourhandle" target="_blank">@yourhandle</a></p>
+                    <p class="contact-desc">Follow for tech insights and updates</p>
+                </div>
+            </div>
+
+            <div class="contact-form-section">
+                <h3>✉️ Send a Message</h3>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                
+                <p class="form-note">
+                    <strong>Note:</strong> This is a static site, so the form won't actually submit.
+                    To enable form submissions, you can integrate with services like Formspree,
+                    Netlify Forms, or create your own backend endpoint.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>🤝 Collaboration</h2>
+            <p>
+                I'm open to collaborating on interesting projects, especially those involving:
+            </p>
+            <ul class="styled-list">
+                <li>Open source development and community projects</li>
+                <li>Web applications with modern frameworks</li>
+                <li>Developer tools and productivity solutions</li>
+                <li>Educational content and technical writing</li>
+                <li>Innovative ideas that push technological boundaries</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>⏰ Availability</h2>
+            <p>
+                I typically respond to messages within 24-48 hours on weekdays. For urgent matters,
+                please mention "URGENT" in your subject line. I'm based in the EST timezone and
+                available for calls between 9 AM - 6 PM EST.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My GitHub Pages Site. Built with ❤️ using GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple form handler (for demonstration - doesn't actually submit)
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thanks for your message! (Note: This is a demo form and does not actually send emails.)');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
