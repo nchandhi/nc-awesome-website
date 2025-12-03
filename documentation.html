@@ -647,8 +647,567 @@
 
                     <!-- Phase 2 step sections placeholder -->
                     <div class="content-section" id="phase2-step1" style="display: none;">
-                        <h1>Step 3: Choose Your AI Platform</h1>
-                        <p><em>Content from docs/build-poc/01-choose-platform.md...</em></p>
+                        <h1>Select AI Platform & Tools</h1>
+                        <p class="phase-meta">🛠️ <strong>Technology Stack</strong></p>
+
+                        <h2>🎯 Objective</h2>
+                        <p>Choose the right AI platform, frameworks, and tools that match your use case, team skills, and budget.</p>
+
+                        <h2>☁️ Cloud Platform Comparison</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Platform</th>
+                                    <th>Strengths</th>
+                                    <th>Best For</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Azure AI</strong></td>
+                                    <td>Azure OpenAI, Cognitive Services, ML Studio</td>
+                                    <td>Enterprise, Microsoft ecosystem</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>AWS AI/ML</strong></td>
+                                    <td>SageMaker, Bedrock, broad service portfolio</td>
+                                    <td>Scalability, mature ML ops</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Google Cloud AI</strong></td>
+                                    <td>Vertex AI, TensorFlow native, AutoML</td>
+                                    <td>ML research, TensorFlow users</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>OpenAI API</strong></td>
+                                    <td>GPT-4, DALL-E, simple API</td>
+                                    <td>Rapid prototyping, NLP tasks</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>🧰 Development Tools Stack</h2>
+                        <div class="info-box">
+                            <h4>Typical AI Development Stack:</h4>
+                            <ul>
+                                <li><strong>Programming Language:</strong> Python (most popular), R, JavaScript</li>
+                                <li><strong>ML Frameworks:</strong> TensorFlow, PyTorch, scikit-learn</li>
+                                <li><strong>LLM Tools:</strong> LangChain, LlamaIndex, Semantic Kernel</li>
+                                <li><strong>Vector Databases:</strong> Pinecone, Weaviate, Azure AI Search</li>
+                                <li><strong>Development Environment:</strong> Jupyter, VS Code, Google Colab</li>
+                                <li><strong>Version Control:</strong> Git, GitHub/Azure DevOps</li>
+                            </ul>
+                        </div>
+
+                        <h2>🎯 Decision Framework</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Criteria</th>
+                                    <th>Questions to Ask</th>
+                                    <th>Impact</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Use Case Fit</strong></td>
+                                    <td>Does platform support your AI task (NLP, vision, etc.)?</td>
+                                    <td>Critical</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Team Skills</strong></td>
+                                    <td>What languages/tools does your team know?</td>
+                                    <td>High</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Existing Infrastructure</strong></td>
+                                    <td>Already on Azure/AWS/GCP?</td>
+                                    <td>Medium</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Budget</strong></td>
+                                    <td>Cost per API call, compute, storage</td>
+                                    <td>High</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Time to Market</strong></td>
+                                    <td>Pre-built models vs custom training?</td>
+                                    <td>Medium</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Compliance</strong></td>
+                                    <td>Data residency, security certifications?</td>
+                                    <td>Critical</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>📦 Quick Start Options</h2>
+                        <div class="example-grid">
+                            <div class="example-card">
+                                <h4>💬 Chatbot/NLP</h4>
+                                <p><strong>Recommended:</strong> Azure OpenAI / OpenAI API<br>
+                                <strong>Tools:</strong> LangChain, Python</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>👁️ Computer Vision</h4>
+                                <p><strong>Recommended:</strong> Azure Computer Vision / AWS Rekognition<br>
+                                <strong>Tools:</strong> OpenCV, TensorFlow</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>📊 Predictive Analytics</h4>
+                                <p><strong>Recommended:</strong> Azure ML / AWS SageMaker<br>
+                                <strong>Tools:</strong> scikit-learn, XGBoost</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>🔍 Search/RAG</h4>
+                                <p><strong>Recommended:</strong> Azure AI Search + OpenAI<br>
+                                <strong>Tools:</strong> LangChain, Pinecone</p>
+                            </div>
+                        </div>
+
+                        <div class="warning-box">
+                            <h3>⚠️ Common Mistakes</h3>
+                            <ul>
+                                <li><strong>Over-engineering:</strong> Don't build custom models if pre-trained APIs solve 80% of your problem</li>
+                                <li><strong>Vendor Lock-in:</strong> Plan for portability or accept lock-in consciously</li>
+                                <li><strong>Cost Surprise:</strong> Estimate API costs at scale (1M calls/month)</li>
+                                <li><strong>Skills Gap:</strong> Choose tools your team can support long-term</li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-buttons">
+                            <a href="#phase2-overview" class="btn btn-secondary">← Back to Overview</a>
+                            <a href="#phase2-step2" class="btn btn-primary">Next: Build & Train Model →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-section" id="phase2-step2" style="display: none;">
+                        <h1>Build & Train Model</h1>
+                        <p class="phase-meta">🤖 <strong>Model Development</strong></p>
+
+                        <h2>🎯 Objective</h2>
+                        <p>Develop and train your AI model using prepared data and selected platform.</p>
+
+                        <h2>📋 Development Workflow</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Phase</th>
+                                    <th>Tasks</th>
+                                    <th>Output</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>1. Data Preparation</strong></td>
+                                    <td>Clean, label, split data (train/val/test 70/15/15)</td>
+                                    <td>Prepared datasets</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2. Model Selection</strong></td>
+                                    <td>Choose architecture (pre-trained vs custom)</td>
+                                    <td>Model architecture</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3. Training</strong></td>
+                                    <td>Train model, tune hyperparameters</td>
+                                    <td>Trained model</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>4. Evaluation</strong></td>
+                                    <td>Test on validation set, measure accuracy</td>
+                                    <td>Performance metrics</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>5. Optimization</strong></td>
+                                    <td>Improve model based on results</td>
+                                    <td>Optimized model</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>🎯 Model Approaches</h2>
+                        <div class="info-box">
+                            <h4>Option 1: Pre-trained Models (Recommended for PoC)</h4>
+                            <ul>
+                                <li><strong>Pros:</strong> Fast, high quality, no training needed</li>
+                                <li><strong>Cons:</strong> Less customizable, API costs</li>
+                                <li><strong>Examples:</strong> GPT-4, BERT, ResNet, YOLO</li>
+                            </ul>
+                            <h4>Option 2: Fine-tuning</h4>
+                            <ul>
+                                <li><strong>Pros:</strong> Customized to your data, better performance</li>
+                                <li><strong>Cons:</strong> Requires labeled data, some ML expertise</li>
+                                <li><strong>Examples:</strong> Fine-tune GPT on your docs, retrain image classifier</li>
+                            </ul>
+                            <h4>Option 3: Train from Scratch</h4>
+                            <ul>
+                                <li><strong>Pros:</strong> Full control, proprietary models</li>
+                                <li><strong>Cons:</strong> Requires large datasets, ML expertise, compute</li>
+                                <li><strong>Use When:</strong> Unique problem, competitive advantage</li>
+                            </ul>
+                        </div>
+
+                        <h2>📊 Performance Metrics</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>When to Use</th>
+                                    <th>Target</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Accuracy</strong></td>
+                                    <td>Balanced datasets</td>
+                                    <td>>85%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Precision</strong></td>
+                                    <td>Cost of false positives is high</td>
+                                    <td>>90%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Recall</strong></td>
+                                    <td>Cost of false negatives is high</td>
+                                    <td>>85%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>F1 Score</strong></td>
+                                    <td>Balance precision and recall</td>
+                                    <td>>0.85</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>BLEU/ROUGE</strong></td>
+                                    <td>Text generation quality</td>
+                                    <td>>0.5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>💡 Example: Chatbot Training</h2>
+                        <div class="example-grid">
+                            <div class="example-card">
+                                <h4>1️⃣ Prepare Data</h4>
+                                <p>Collect 500+ Q&A pairs from support tickets</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>2️⃣ Choose Model</h4>
+                                <p>Use Azure OpenAI GPT-4 with custom prompt</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>3️⃣ Add Context</h4>
+                                <p>Implement RAG with company knowledge base</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>4️⃣ Test & Refine</h4>
+                                <p>Test with 50 sample queries, iterate</p>
+                            </div>
+                        </div>
+
+                        <div class="warning-box">
+                            <h3>⚠️ Training Pitfalls</h3>
+                            <ul>
+                                <li><strong>Overfitting:</strong> Model memorizes training data but fails on new data</li>
+                                <li><strong>Underfitting:</strong> Model too simple to capture patterns</li>
+                                <li><strong>Data Leakage:</strong> Test data influences training</li>
+                                <li><strong>Imbalanced Classes:</strong> 95% negative, 5% positive examples</li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-buttons">
+                            <a href="#phase2-step1" class="btn btn-secondary">← Previous Step</a>
+                            <a href="#phase2-step3" class="btn btn-primary">Next: Create Demo Interface →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-section" id="phase2-step3" style="display: none;">
+                        <h1>Create Demo Interface</h1>
+                        <p class="phase-meta">🎨 <strong>User Interface</strong></p>
+
+                        <h2>🎯 Objective</h2>
+                        <p>Build a simple, functional interface to demonstrate your AI solution to stakeholders.</p>
+
+                        <h2>🛠️ UI Framework Options</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Framework</th>
+                                    <th>Best For</th>
+                                    <th>Effort</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Streamlit</strong></td>
+                                    <td>Python developers, rapid prototyping</td>
+                                    <td>1-2 days</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Gradio</strong></td>
+                                    <td>ML demos, quick sharing</td>
+                                    <td>1 day</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>React + FastAPI</strong></td>
+                                    <td>Production-ready, scalable</td>
+                                    <td>1-2 weeks</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Power Apps</strong></td>
+                                    <td>Low-code, Microsoft ecosystem</td>
+                                    <td>2-3 days</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>📋 Demo Interface Checklist</h2>
+                        <div class="info-box">
+                            <h4>Essential Features:</h4>
+                            <ul>
+                                <li>✅ Input field/upload for user data</li>
+                                <li>✅ "Submit" or "Process" button</li>
+                                <li>✅ Clear display of AI results</li>
+                                <li>✅ Loading indicator while processing</li>
+                                <li>✅ Error handling and user feedback</li>
+                                <li>✅ Simple, clean design (focus on functionality)</li>
+                            </ul>
+                            <h4>Nice to Have:</h4>
+                            <ul>
+                                <li>🔧 Example inputs pre-filled</li>
+                                <li>🔧 Confidence scores shown</li>
+                                <li>🔧 Multiple result formats (table, chart)</li>
+                                <li>🔧 Download results option</li>
+                            </ul>
+                        </div>
+
+                        <h2>💡 Example Demos by Use Case</h2>
+                        <div class="example-grid">
+                            <div class="example-card">
+                                <h4>💬 Chatbot</h4>
+                                <p><strong>Interface:</strong> Chat window<br>
+                                <strong>Input:</strong> Text box<br>
+                                <strong>Output:</strong> AI response</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>🖼️ Image Classifier</h4>
+                                <p><strong>Interface:</strong> Upload area<br>
+                                <strong>Input:</strong> Image file<br>
+                                <strong>Output:</strong> Category + %</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>📊 Forecasting</h4>
+                                <p><strong>Interface:</strong> Form inputs<br>
+                                <strong>Input:</strong> Historical data<br>
+                                <strong>Output:</strong> Chart + numbers</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>📝 Text Generator</h4>
+                                <p><strong>Interface:</strong> Prompt box<br>
+                                <strong>Input:</strong> Instructions<br>
+                                <strong>Output:</strong> Generated text</p>
+                            </div>
+                        </div>
+
+                        <h2>🚀 Quick Start: Streamlit Example</h2>
+                        <div class="info-box" style="background-color: #f8f9fa;">
+                            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>import streamlit as st
+import openai
+
+st.title("AI Support Assistant")
+user_input = st.text_input("Ask a question:")
+
+if st.button("Get Answer"):
+    response = openai.ChatCompletion.create(
+        model="gpt-4",
+        messages=[{"role": "user", "content": user_input}]
+    )
+    st.write(response.choices[0].message.content)</code></pre>
+                        </div>
+
+                        <div class="warning-box">
+                            <h3>⚠️ Demo Best Practices</h3>
+                            <ul>
+                                <li><strong>Keep it Simple:</strong> Focus on core functionality, not fancy UI</li>
+                                <li><strong>Use Real Data:</strong> Demo with actual business scenarios</li>
+                                <li><strong>Show Confidence:</strong> Display accuracy/confidence scores</li>
+                                <li><strong>Handle Errors:</strong> Don't crash on bad input</li>
+                                <li><strong>Make it Fast:</strong> <3 second response time</li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-buttons">
+                            <a href="#phase2-step2" class="btn btn-secondary">← Previous Step</a>
+                            <a href="#phase2-step4" class="btn btn-primary">Next: Validate with Stakeholders →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-section" id="phase2-step4" style="display: none;">
+                        <h1>Validate with Stakeholders</h1>
+                        <p class="phase-meta">✅ <strong>Stakeholder Validation</strong></p>
+
+                        <h2>🎯 Objective</h2>
+                        <p>Demonstrate your PoC to stakeholders, gather feedback, and get approval to proceed to production.</p>
+
+                        <h2>📋 Validation Process</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Step</th>
+                                    <th>Activities</th>
+                                    <th>Success Criteria</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>1. Internal Testing</strong></td>
+                                    <td>Test with team, fix major bugs</td>
+                                    <td>No critical errors</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2. Pilot Users</strong></td>
+                                    <td>5-10 real users test the solution</td>
+                                    <td>Positive feedback (>70%)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3. Stakeholder Demo</strong></td>
+                                    <td>Present to executives and decision makers</td>
+                                    <td>Clear business value shown</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>4. Measure KPIs</strong></td>
+                                    <td>Compare results to success metrics</td>
+                                    <td>Meet 80% of targets</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>5. Go/No-Go Decision</strong></td>
+                                    <td>Decide whether to proceed to production</td>
+                                    <td>Executive approval granted</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>🎤 Demo Presentation Structure</h2>
+                        <div class="info-box">
+                            <h4>1. Problem Recap (2 min)</h4>
+                            <p>Remind audience of the business problem you're solving</p>
+                            
+                            <h4>2. Live Demo (10 min)</h4>
+                            <p>Show the AI solution in action with real examples</p>
+                            
+                            <h4>3. Results & Metrics (5 min)</h4>
+                            <p>Present performance data against KPIs</p>
+                            
+                            <h4>4. User Feedback (3 min)</h4>
+                            <p>Share quotes and testimonials from pilot users</p>
+                            
+                            <h4>5. Next Steps & Investment (5 min)</h4>
+                            <p>Outline production roadmap and required resources</p>
+                        </div>
+
+                        <h2>📊 Validation Metrics</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>Target</th>
+                                    <th>Actual</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Model Accuracy</td>
+                                    <td>>85%</td>
+                                    <td>__%</td>
+                                </tr>
+                                <tr>
+                                    <td>User Satisfaction</td>
+                                    <td>>4.0/5.0</td>
+                                    <td>__/5.0</td>
+                                </tr>
+                                <tr>
+                                    <td>Response Time</td>
+                                    <td><3 seconds</td>
+                                    <td>__ sec</td>
+                                </tr>
+                                <tr>
+                                    <td>Pilot Users Completed</td>
+                                    <td>10 users</td>
+                                    <td>__ users</td>
+                                </tr>
+                                <tr>
+                                    <td>Business Impact (est.)</td>
+                                    <td>$50K savings/year</td>
+                                    <td>$__K</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>💡 Gathering Feedback</h2>
+                        <div class="example-grid">
+                            <div class="example-card">
+                                <h4>📝 Surveys</h4>
+                                <p>Post-use questionnaire with ratings</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>👥 Interviews</h4>
+                                <p>1-on-1 discussions with pilot users</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>📊 Analytics</h4>
+                                <p>Usage data, error rates, patterns</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>🐛 Issue Tracking</h4>
+                                <p>Log bugs and feature requests</p>
+                            </div>
+                        </div>
+
+                        <h2>✅ Go/No-Go Decision Criteria</h2>
+                        <div class="info-box" style="background-color: #fff3cd; border-left: 4px solid #ffc107;">
+                            <h4>✅ Proceed to Production if:</h4>
+                            <ul>
+                                <li>Model accuracy meets >80% of target</li>
+                                <li>User satisfaction >3.5/5.0</li>
+                                <li>Clear ROI demonstrated</li>
+                                <li>Executive sponsor approves</li>
+                                <li>Technical feasibility confirmed</li>
+                            </ul>
+                            <h4>⚠️ Iterate on PoC if:</h4>
+                            <ul>
+                                <li>Model accuracy <70% of target</li>
+                                <li>Major technical blockers identified</li>
+                                <li>User feedback indicates wrong direction</li>
+                            </ul>
+                            <h4>❌ Stop Project if:</h4>
+                            <ul>
+                                <li>Business case no longer valid</li>
+                                <li>Technical impossibility confirmed</li>
+                                <li>Budget/resources unavailable</li>
+                            </ul>
+                        </div>
+
+                        <div class="warning-box">
+                            <h3>⚠️ Common Validation Mistakes</h3>
+                            <ul>
+                                <li><strong>Cherry-picking Examples:</strong> Show both successes AND failures honestly</li>
+                                <li><strong>Ignoring Feedback:</strong> Listen to pilot users, especially criticism</li>
+                                <li><strong>Overpromising:</strong> Set realistic expectations for production</li>
+                                <li><strong>Technical Jargon:</strong> Speak business language to executives</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box" style="background-color: #d4edda; border-left: 4px solid #28a745;">
+                            <h3>🎉 PoC Complete!</h3>
+                            <p>Congratulations! You've successfully validated your AI solution with stakeholders. If approved, you're ready to scale to production with enterprise-grade deployment.</p>
+                        </div>
+
+                        <div class="nav-buttons">
+                            <a href="#phase2-step3" class="btn btn-secondary">← Previous Step</a>
+                            <a href="documentation.html#phase3" class="btn btn-primary">Proceed to Scale to Production →</a>
+                        </div>
                     </div>
                 </div>
 
