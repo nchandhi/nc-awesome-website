@@ -1,45 +1,49 @@
-# Documentation Home
+# AI Solution Builder Documentation
 
-Welcome to the **NC Awesome Website** documentation! This guide will help you understand, customize, and extend your GitHub Pages site.
-
----
-
-## 🚀 Quick Start
-
-=== "NEW USER"
-
-    If you're new to this project:
-
-    - **Duration** - 10-15 minutes to get started
-    - **Prerequisites** - Basic HTML/CSS knowledge
-    - **Next Step** - [Begin with Setup Guide](./getting-started/index.md)
-
-    **✅ [Get Started Now →](./getting-started/00-setup.md)**
-
-=== "EXPERIENCED USER"
-
-    If you're already familiar with the basics:
-
-    - **Advanced Topics** - Explore customization options
-    - **Tutorials** - Learn specific techniques
-    - **Reference** - Quick lookup for specific features
-
-    **✅ [Jump to Tutorials →](./tutorials/index.md)**
+Welcome to the **AI Solution Builder** comprehensive guide! This documentation will guide you through building production-ready AI solutions from concept to deployment.
 
 ---
 
-## 📚 What You'll Learn
+## 🚀 Choose Your Path
+
+=== "BEGINNER"
+
+    If you're new to AI development:
+
+    - **Duration** - Follow at your own pace
+    - **Prerequisites** - Basic programming knowledge
+    - **Next Step** - Start with fundamentals
+    - **Learn** - Understand AI concepts and planning
+
+    **✅ [Start Learning →](./getting-started/index.md)**
+
+=== "EXPERIENCED DEVELOPER"
+
+    If you have development experience:
+
+    - **Jump To** - Specific AI implementation steps
+    - **Focus On** - Building and deploying models
+    - **Advanced** - Scaling and optimization
+    - **Reference** - Best practices and patterns
+
+    **✅ [Build Your Solution →](./tutorials/index.md)**
+
+---
+
+## 📚 What You'll Build
 
 By following this documentation, you'll be able to:
 
 !!! success "Learning Objectives"
 
-    - [X] Set up and deploy a GitHub Pages site
-    - [X] Customize HTML, CSS, and navigation
-    - [X] Add new pages and sections
-    - [X] Implement responsive design patterns
-    - [X] Integrate custom features and functionality
-    - [X] Optimize for performance and SEO
+    - [X] Define and scope AI use cases with clear ROI
+    - [X] Prepare and manage data for AI models
+    - [X] Choose the right AI platforms and tools
+    - [X] Build, train, and validate AI models
+    - [X] Create user-friendly interfaces for AI solutions
+    - [X] Deploy AI solutions to production environments
+    - [X] Monitor, optimize, and scale AI systems
+    - [X] Implement responsible AI practices
 
 ---
 
@@ -47,42 +51,44 @@ By following this documentation, you'll be able to:
 
 | Section | Topics | Duration | Level |
 |---------|--------|----------|-------|
-| [Getting Started](./getting-started/index.md) | **Setup & Basics** | 15 min | 🟢 Beginner |
-| [Tutorials](./tutorials/index.md) | **Step-by-Step Guides** | 30 min | 🟡 Intermediate |
-| [Advanced](./advanced/index.md) | **Customization & Features** | 45 min | 🔴 Advanced |
+| [Getting Started](./getting-started/index.md) | **Planning & Foundations** | 2-3 hours | 🟢 Beginner |
+| [Tutorials](./tutorials/index.md) | **Build & Deploy** | 4-6 hours | 🟡 Intermediate |
+| [Advanced](./advanced/index.md) | **Scale & Optimize** | 3-4 hours | 🔴 Advanced |
 
 ---
 
 ## 💡 Key Features
 
-This site comes with:
+This guide provides:
 
-- **Responsive Design** - Works on all devices (desktop, tablet, mobile)
-- **Modern Styling** - Clean, professional CSS with animations
-- **Easy Navigation** - Consistent menu across all pages
-- **Sample Content** - 4 fully designed pages to start from
-- **GitHub Pages** - Free hosting with automatic deployments
+- **Incremental Learning** - Progress from basics to advanced topics
+- **Practical Examples** - Real-world code samples and templates
+- **Best Practices** - Industry-proven methodologies
+- **Platform Agnostic** - Works with Azure, AWS, Google Cloud
+- **Complete Coverage** - From planning to production deployment
+- **GitHub Integration** - All code and examples in repository
 
 ---
 
 ## 🛠️ Prerequisites
 
-To work with this project, you'll need:
+To follow this guide, you'll need:
 
-- A modern web browser (Chrome, Firefox, Edge, Safari)
-- A text editor (VS Code recommended)
-- Basic knowledge of HTML and CSS
-- A GitHub account
-- Git installed on your computer
+- Basic programming knowledge (Python recommended)
+- Understanding of cloud computing concepts
+- A cloud platform account (Azure, AWS, or GCP)
+- Development environment (VS Code, Python, Git)
+- Curiosity and willingness to learn
 
 ---
 
-## 📖 Additional Resources
+## 📖 Quick Links
 
-- [GitHub Pages Documentation](https://docs.github.com/en/pages)
-- [HTML & CSS Tutorials](https://www.w3schools.com/)
-- [Responsive Design Guide](https://web.dev/responsive-web-design-basics/)
-- [Git & GitHub Learning](https://skills.github.com/)
+- [View on GitHub](https://github.com/nchandhi/nc-awesome-website) - Repository home
+- [Browse Documentation](https://github.com/nchandhi/nc-awesome-website/tree/main/docs) - All guides
+- [Getting Started](./getting-started/index.md) - Begin here
+- [Build Steps](../projects.html) - Visual step-by-step guide
+- [Resources](../contact.html) - Tools and platforms
 
 ---
 
