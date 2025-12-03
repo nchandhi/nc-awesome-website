@@ -47,6 +47,15 @@ function switchTab(tabId) {
         clickedButton.classList.add('active');
     }
     
+    // Update main navigation active state
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.classList.remove('active');
+        const href = link.getAttribute('href');
+        if (href && href.includes('#' + tabId)) {
+            link.classList.add('active');
+        }
+    });
+    
     // Scroll to top
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
