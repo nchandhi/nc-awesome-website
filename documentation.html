@@ -42,7 +42,7 @@
                     <ul class="sidebar-menu">
                         <li><a href="#phase2-overview" class="sidebar-link active">Overview</a></li>
                         <li><a href="#phase2-step1" class="sidebar-link">Select AI Platform & Tools</a></li>
-                        <li><a href="#phase2-step2" class="sidebar-link">Build & Train Model</a></li>
+                        <li><a href="#phase2-step2" class="sidebar-link">Create Agents & Orchestration</a></li>
                         <li><a href="#phase2-step3" class="sidebar-link">Create Demo Interface</a></li>
                         <li><a href="#phase2-step4" class="sidebar-link">Validate with Stakeholders</a></li>
                     </ul>
@@ -612,9 +612,9 @@
                                     <td>Technical architecture document</td>
                                 </tr>
                                 <tr>
-                                    <td><a href="#phase2-step2"><strong>Build & Train Model</strong></a></td>
-                                    <td>Prepare training data, build model, validate accuracy</td>
-                                    <td>Working AI model with >80% accuracy</td>
+                                    <td><a href="#phase2-step2"><strong>Create Agents & Orchestration</strong></a></td>
+                                    <td>Define agents, configure orchestration, test responses</td>
+                                    <td>Working agent system with validated responses</td>
                                 </tr>
                                 <tr>
                                     <td><a href="#phase2-step3"><strong>Create Demo Interface</strong></a></td>
@@ -777,18 +777,18 @@
 
                         <div class="nav-buttons">
                             <a href="#phase2-overview" class="btn btn-secondary">← Back to Overview</a>
-                            <a href="#phase2-step2" class="btn btn-primary">Next: Build & Train Model →</a>
+                            <a href="#phase2-step2" class="btn btn-primary">Next: Create Agents & Orchestration →</a>
                         </div>
                     </div>
 
                     <div class="content-section" id="phase2-step2" style="display: none;">
-                        <h1>Build & Train Model</h1>
-                        <p class="phase-meta">🤖 <strong>Model Development</strong></p>
+                        <h1>Create Agents & Orchestration</h1>
+                        <p class="phase-meta">🤖 <strong>Agent Development</strong></p>
 
                         <h2>🎯 Objective</h2>
-                        <p>Develop and train your AI model using prepared data and selected platform.</p>
+                        <p>Design and implement AI agents, configure orchestration patterns, and test agent responses.</p>
 
-                        <h2>📋 Development Workflow</h2>
+                        <h2>📋 Agent Development Workflow</h2>
                         <table class="steps-table">
                             <thead>
                                 <tr>
@@ -799,89 +799,89 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>1. Data Preparation</strong></td>
-                                    <td>Clean, label, split data (train/val/test 70/15/15)</td>
-                                    <td>Prepared datasets</td>
+                                    <td><strong>1. Define Agents</strong></td>
+                                    <td>Identify agent roles, responsibilities, and capabilities</td>
+                                    <td>Agent architecture document</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>2. Model Selection</strong></td>
-                                    <td>Choose architecture (pre-trained vs custom)</td>
-                                    <td>Model architecture</td>
+                                    <td><strong>2. Configure Orchestration</strong></td>
+                                    <td>Design agent workflows, handoffs, and communication patterns</td>
+                                    <td>Orchestration flow diagram</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>3. Training</strong></td>
-                                    <td>Train model, tune hyperparameters</td>
-                                    <td>Trained model</td>
+                                    <td><strong>3. Implement Agents</strong></td>
+                                    <td>Build agents using Semantic Kernel or AutoGen</td>
+                                    <td>Working agent code</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>4. Evaluation</strong></td>
-                                    <td>Test on validation set, measure accuracy</td>
-                                    <td>Performance metrics</td>
+                                    <td><strong>4. Test Responses</strong></td>
+                                    <td>Run test scenarios, validate agent responses and handoffs</td>
+                                    <td>Test results and metrics</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>5. Optimization</strong></td>
-                                    <td>Improve model based on results</td>
-                                    <td>Optimized model</td>
+                                    <td><strong>5. Refine & Optimize</strong></td>
+                                    <td>Improve prompts, add guardrails, optimize performance</td>
+                                    <td>Optimized agent system</td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <h2>🎯 Model Approaches</h2>
+                        <h2>🎯 Agent Orchestration Patterns</h2>
                         <div class="info-box">
-                            <h4>Option 1: Pre-trained Models (Recommended for PoC)</h4>
+                            <h4>Pattern 1: Single Agent (Recommended for PoC)</h4>
                             <ul>
-                                <li><strong>Pros:</strong> Fast, high quality, no training needed</li>
-                                <li><strong>Cons:</strong> Less customizable, API costs</li>
-                                <li><strong>Examples:</strong> GPT-4, BERT, ResNet, YOLO</li>
+                                <li><strong>Pros:</strong> Simple, easy to test, fast implementation</li>
+                                <li><strong>Cons:</strong> Limited capabilities, single point of failure</li>
+                                <li><strong>Use Case:</strong> Simple Q&A, basic automation tasks</li>
                             </ul>
-                            <h4>Option 2: Fine-tuning</h4>
+                            <h4>Pattern 2: Sequential Multi-Agent</h4>
                             <ul>
-                                <li><strong>Pros:</strong> Customized to your data, better performance</li>
-                                <li><strong>Cons:</strong> Requires labeled data, some ML expertise</li>
-                                <li><strong>Examples:</strong> Fine-tune GPT on your docs, retrain image classifier</li>
+                                <li><strong>Pros:</strong> Specialized agents, clear workflow, easy debugging</li>
+                                <li><strong>Cons:</strong> Less flexible, potential bottlenecks</li>
+                                <li><strong>Use Case:</strong> Document processing pipeline, approval workflows</li>
                             </ul>
-                            <h4>Option 3: Train from Scratch</h4>
+                            <h4>Pattern 3: Autonomous Multi-Agent</h4>
                             <ul>
-                                <li><strong>Pros:</strong> Full control, proprietary models</li>
-                                <li><strong>Cons:</strong> Requires large datasets, ML expertise, compute</li>
-                                <li><strong>Use When:</strong> Unique problem, competitive advantage</li>
+                                <li><strong>Pros:</strong> Flexible, intelligent routing, handles complex tasks</li>
+                                <li><strong>Cons:</strong> Complex to debug, requires orchestration logic</li>
+                                <li><strong>Use Case:</strong> Research tasks, collaborative problem-solving</li>
                             </ul>
                         </div>
 
-                        <h2>📊 Performance Metrics</h2>
+                        <h2>📊 Agent Response Quality Metrics</h2>
                         <table class="steps-table">
                             <thead>
                                 <tr>
                                     <th>Metric</th>
-                                    <th>When to Use</th>
+                                    <th>Description</th>
                                     <th>Target</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Accuracy</strong></td>
-                                    <td>Balanced datasets</td>
-                                    <td>>85%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Precision</strong></td>
-                                    <td>Cost of false positives is high</td>
+                                    <td><strong>Response Accuracy</strong></td>
+                                    <td>Correct and relevant answers</td>
                                     <td>>90%</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Recall</strong></td>
-                                    <td>Cost of false negatives is high</td>
+                                    <td><strong>Task Completion Rate</strong></td>
+                                    <td>Successfully completed workflows</td>
                                     <td>>85%</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>F1 Score</strong></td>
-                                    <td>Balance precision and recall</td>
-                                    <td>>0.85</td>
+                                    <td><strong>Response Time</strong></td>
+                                    <td>Time to generate response</td>
+                                    <td><3 seconds</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>BLEU/ROUGE</strong></td>
-                                    <td>Text generation quality</td>
-                                    <td>>0.5</td>
+                                    <td><strong>Handoff Success</strong></td>
+                                    <td>Successful agent-to-agent transitions</td>
+                                    <td>>95%</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>User Satisfaction</strong></td>
+                                    <td>Thumbs up/down rating</td>
+                                    <td>>4/5</td>
                                 </tr>
                             </tbody>
                         </table>
