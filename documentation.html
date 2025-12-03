@@ -207,9 +207,93 @@
 
                     <!-- Additional Phase 1 step sections would go here -->
                     <div class="content-section" id="phase1-step2" style="display: none;">
-                        <h1>Step 2: Prepare Your Data</h1>
-                        <p class="phase-meta">⏱️ <strong>45 minutes</strong> | 🟢 <strong>Beginner</strong></p>
-                        <p><em>Content from docs/business-scenario/02-prepare-data.md...</em></p>
+                        <h1>Assess Data Readiness</h1>
+                        <p class="phase-meta">📊 <strong>Data Assessment</strong></p>
+
+                        <h2>🎯 Objective</h2>
+                        <p>Evaluate the availability, quality, and readiness of data required to build your AI solution.</p>
+
+                        <h2>📋 Key Activities</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Task</th>
+                                    <th>What to Do</th>
+                                    <th>Output</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Inventory Data Sources</strong></td>
+                                    <td>List all internal/external data sources (databases, APIs, files)</td>
+                                    <td>Data source inventory</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Assess Data Quality</strong></td>
+                                    <td>Check completeness, accuracy, consistency, timeliness</td>
+                                    <td>Data quality report</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Check Data Volume</strong></td>
+                                    <td>Ensure sufficient data for training (typically 1000+ samples)</td>
+                                    <td>Data volume assessment</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Identify Gaps</strong></td>
+                                    <td>Document missing data and how to acquire it</td>
+                                    <td>Gap analysis document</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Review Privacy/Compliance</strong></td>
+                                    <td>Check GDPR, CCPA, industry regulations</td>
+                                    <td>Compliance checklist</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>✅ Data Quality Checklist</h2>
+                        <div class="info-box">
+                            <ul>
+                                <li><strong>Completeness:</strong> Are all required fields populated?</li>
+                                <li><strong>Accuracy:</strong> Is the data correct and validated?</li>
+                                <li><strong>Consistency:</strong> Is formatting uniform across sources?</li>
+                                <li><strong>Timeliness:</strong> Is the data current and relevant?</li>
+                                <li><strong>Relevance:</strong> Does data directly relate to your use case?</li>
+                                <li><strong>Volume:</strong> Do you have enough data for training?</li>
+                            </ul>
+                        </div>
+
+                        <h2>🔍 Data Sources Examples</h2>
+                        <div class="example-grid">
+                            <div class="example-card">
+                                <h4>📁 Internal Databases</h4>
+                                <p>CRM, ERP, transaction logs</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>🌐 External APIs</h4>
+                                <p>Weather data, market feeds, social media</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>📄 Documents</h4>
+                                <p>PDFs, spreadsheets, emails, reports</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>👥 User Generated</h4>
+                                <p>Surveys, feedback forms, support tickets</p>
+                            </div>
+                        </div>
+
+                        <div class="warning-box">
+                            <h3>⚠️ Common Data Issues</h3>
+                            <ul>
+                                <li><strong>Insufficient Volume:</strong> Need minimum 1000-10,000 samples for most ML models</li>
+                                <li><strong>Imbalanced Data:</strong> One class significantly outnumbers others</li>
+                                <li><strong>Missing Values:</strong> Critical fields with null/empty values</li>
+                                <li><strong>Outdated Data:</strong> Historical data no longer reflects current patterns</li>
+                                <li><strong>Privacy Concerns:</strong> PII (Personally Identifiable Information) not properly handled</li>
+                            </ul>
+                        </div>
+
                         <div class="nav-buttons">
                             <a href="#phase1-step1" class="btn btn-secondary">← Previous Step</a>
                             <a href="#phase1-step3" class="btn btn-primary">Next: Success Metrics →</a>
@@ -217,22 +301,279 @@
                     </div>
 
                     <div class="content-section" id="phase1-step3" style="display: none;">
-                        <h1>Step 3: Set Success Metrics</h1>
-                        <p class="phase-meta">⏱️ <strong>20 minutes</strong> | 🟢 <strong>Beginner</strong></p>
-                        <p><em>Content from docs/business-scenario/03-success-metrics.md...</em></p>
+                        <h1>Success Metrics & KPIs</h1>
+                        <p class="phase-meta">📈 <strong>Measurement Framework</strong></p>
+
+                        <h2>🎯 Objective</h2>
+                        <p>Define clear, measurable metrics that will demonstrate the success of your AI solution.</p>
+
+                        <h2>📋 Key Performance Indicators</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Example Metrics</th>
+                                    <th>Target</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Business Impact</strong></td>
+                                    <td>Cost savings, revenue increase, efficiency gain</td>
+                                    <td>20-40% improvement</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Technical Performance</strong></td>
+                                    <td>Accuracy, precision, recall, F1 score</td>
+                                    <td>>85% accuracy</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>User Experience</strong></td>
+                                    <td>Response time, user satisfaction (CSAT), adoption rate</td>
+                                    <td><2 sec response, >4.0 CSAT</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Operational</strong></td>
+                                    <td>Uptime, throughput, error rate</td>
+                                    <td>99.9% uptime, <1% errors</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>🎯 SMART Goals Framework</h2>
+                        <div class="info-box">
+                            <p>Ensure your metrics follow the SMART criteria:</p>
+                            <ul>
+                                <li><strong>Specific:</strong> Clearly defined and unambiguous</li>
+                                <li><strong>Measurable:</strong> Quantifiable with specific numbers</li>
+                                <li><strong>Achievable:</strong> Realistic given resources and constraints</li>
+                                <li><strong>Relevant:</strong> Aligned with business objectives</li>
+                                <li><strong>Time-bound:</strong> Has a clear deadline or timeframe</li>
+                            </ul>
+                        </div>
+
+                        <h2>📊 Example Metrics by Use Case</h2>
+                        <div class="example-grid">
+                            <div class="example-card">
+                                <h4>🤖 Chatbot</h4>
+                                <p><strong>KPI:</strong> Reduce avg response time from 24h to 2h<br>
+                                <strong>Target:</strong> 90% resolution rate</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>🔍 Fraud Detection</h4>
+                                <p><strong>KPI:</strong> Detect 95% of fraud cases<br>
+                                <strong>Target:</strong> <5% false positives</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>📈 Sales Forecast</h4>
+                                <p><strong>KPI:</strong> Improve forecast accuracy to 90%<br>
+                                <strong>Target:</strong> Reduce inventory by 25%</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>✍️ Content Generation</h4>
+                                <p><strong>KPI:</strong> Produce 3x more content<br>
+                                <strong>Target:</strong> 80% approval rate</p>
+                            </div>
+                        </div>
+
+                        <h2>📋 Baseline vs Target</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Metric</th>
+                                    <th>Current Baseline</th>
+                                    <th>Target (6 months)</th>
+                                    <th>Stretch Goal (12 months)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Customer Support Response Time</td>
+                                    <td>24 hours</td>
+                                    <td>2 hours</td>
+                                    <td>30 minutes</td>
+                                </tr>
+                                <tr>
+                                    <td>Resolution Rate</td>
+                                    <td>70%</td>
+                                    <td>85%</td>
+                                    <td>95%</td>
+                                </tr>
+                                <tr>
+                                    <td>Cost per Ticket</td>
+                                    <td>$15</td>
+                                    <td>$8</td>
+                                    <td>$5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="warning-box">
+                            <h3>⚠️ Metric Pitfalls to Avoid</h3>
+                            <ul>
+                                <li><strong>Vanity Metrics:</strong> Numbers that look good but don't drive action (e.g., "AI model deployed")</li>
+                                <li><strong>Too Many Metrics:</strong> Focus on 3-5 key metrics, not 20</li>
+                                <li><strong>No Baseline:</strong> Always measure current state before implementing AI</li>
+                                <li><strong>Wrong Attribution:</strong> Ensure improvements are actually due to AI, not other factors</li>
+                            </ul>
+                        </div>
+
                         <div class="nav-buttons">
                             <a href="#phase1-step2" class="btn btn-secondary">← Previous Step</a>
-                            <a href="#phase1-step4" class="btn btn-primary">Next: Feasibility →</a>
+                            <a href="#phase1-step4" class="btn btn-primary">Next: Business Case Approval →</a>
                         </div>
                     </div>
 
                     <div class="content-section" id="phase1-step4" style="display: none;">
-                        <h1>Step 4: Assess Feasibility</h1>
-                        <p class="phase-meta">⏱️ <strong>25 minutes</strong> | 🟢 <strong>Beginner</strong></p>
-                        <p><em>Content from docs/business-scenario/04-feasibility.md...</em></p>
+                        <h1>Business Case Approval</h1>
+                        <p class="phase-meta">✅ <strong>Stakeholder Buy-in</strong></p>
+
+                        <h2>🎯 Objective</h2>
+                        <p>Present a compelling business case to secure executive approval and budget for your AI initiative.</p>
+
+                        <h2>📋 Business Case Components</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Section</th>
+                                    <th>What to Include</th>
+                                    <th>Key Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Executive Summary</strong></td>
+                                    <td>1-page overview of problem, solution, ROI</td>
+                                    <td>Focus on business value</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Problem Statement</strong></td>
+                                    <td>Current pain points and their business impact</td>
+                                    <td>Quantify the problem</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Proposed Solution</strong></td>
+                                    <td>AI approach, how it works, expected outcomes</td>
+                                    <td>Keep it non-technical</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>ROI Analysis</strong></td>
+                                    <td>Costs vs benefits over 1-3 years</td>
+                                    <td>Be realistic and conservative</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Implementation Plan</strong></td>
+                                    <td>Timeline, milestones, resource needs</td>
+                                    <td>Show quick wins (PoC in 2-3 months)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Risk Assessment</strong></td>
+                                    <td>Potential challenges and mitigation strategies</td>
+                                    <td>Address concerns proactively</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>💰 ROI Calculation Example</h2>
+                        <div class="info-box">
+                            <h4>Customer Support Chatbot - 3 Year ROI</h4>
+                            <p><strong>Costs:</strong></p>
+                            <ul>
+                                <li>Development: $100,000</li>
+                                <li>Annual maintenance: $30,000</li>
+                                <li>Total 3-year cost: $190,000</li>
+                            </ul>
+                            <p><strong>Benefits:</strong></p>
+                            <ul>
+                                <li>Reduce 5 FTE support staff: $300,000/year</li>
+                                <li>Improved customer satisfaction: $50,000/year value</li>
+                                <li>Total 3-year benefit: $1,050,000</li>
+                            </ul>
+                            <p><strong>Net ROI: $860,000 (453% return)</strong></p>
+                        </div>
+
+                        <h2>🎤 Presentation Tips</h2>
+                        <div class="example-grid">
+                            <div class="example-card">
+                                <h4>📊 Lead with Data</h4>
+                                <p>Start with hard numbers showing the problem's cost</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>🎯 Focus on Business</h4>
+                                <p>Talk outcomes, not technology</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>⏱️ Show Quick Wins</h4>
+                                <p>Emphasize 2-3 month PoC milestone</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>📈 Benchmark Success</h4>
+                                <p>Share industry case studies</p>
+                            </div>
+                        </div>
+
+                        <h2>✅ Approval Checklist</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Status</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Executive sponsor identified</td>
+                                    <td>☐</td>
+                                    <td>C-level champion for the initiative</td>
+                                </tr>
+                                <tr>
+                                    <td>Budget approved</td>
+                                    <td>☐</td>
+                                    <td>Include PoC + production phases</td>
+                                </tr>
+                                <tr>
+                                    <td>Timeline agreed</td>
+                                    <td>☐</td>
+                                    <td>PoC: 2-3 months, Production: 6-12 months</td>
+                                </tr>
+                                <tr>
+                                    <td>Success metrics defined</td>
+                                    <td>☐</td>
+                                    <td>Clear KPIs with baseline and targets</td>
+                                </tr>
+                                <tr>
+                                    <td>Resources allocated</td>
+                                    <td>☐</td>
+                                    <td>Team members, tools, infrastructure</td>
+                                </tr>
+                                <tr>
+                                    <td>Go/No-Go decision</td>
+                                    <td>☐</td>
+                                    <td>Formal approval to proceed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="warning-box">
+                            <h3>⚠️ Common Objections & Responses</h3>
+                            <ul>
+                                <li><strong>"Too expensive":</strong> Show ROI payback in 12-18 months, start with small PoC</li>
+                                <li><strong>"Too risky":</strong> Propose phased approach with go/no-go decision after PoC</li>
+                                <li><strong>"Takes too long":</strong> Emphasize quick 2-3 month PoC to demonstrate value</li>
+                                <li><strong>"We don't have skills":</strong> Plan for training, hiring, or partnerships</li>
+                                <li><strong>"Our data isn't ready":</strong> Include data preparation in project scope</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-box" style="background-color: #d4edda; border-left: 4px solid #28a745;">
+                            <h3>🎉 Congratulations!</h3>
+                            <p>You've completed the Business Scenario phase! You now have a solid business case with executive approval. Next, you'll build a proof of concept to validate your approach.</p>
+                        </div>
+
                         <div class="nav-buttons">
                             <a href="#phase1-step3" class="btn btn-secondary">← Previous Step</a>
-                            <button class="btn btn-primary" onclick="switchTab('phase2')">Proceed to Phase 2 →</button>
+                            <a href="documentation.html#phase2" class="btn btn-primary">Start Building PoC →</a>
                         </div>
                     </div>
                 </div>
