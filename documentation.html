@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - AI Solution Builder Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="docs-styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">AI Solution Builder</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">The Process</a></li>
+                <li><a href="projects.html">Build Steps</a></li>
+                <li><a href="documentation.html" class="active">Documentation</a></li>
+                <li><a href="contact.html">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="docs-container">
+        <!-- Tab Navigation -->
+        <div class="docs-tabs">
+            <button class="tab-button active" data-tab="phase1">Phase 1: Planning</button>
+            <button class="tab-button" data-tab="phase2">Phase 2: Development</button>
+            <button class="tab-button" data-tab="phase3">Phase 3: Deployment</button>
+        </div>
+
+        <div class="docs-content-wrapper">
+            <!-- Sidebar -->
+            <aside class="docs-sidebar">
+                <!-- Phase 1 Sidebar -->
+                <div class="sidebar-section" id="sidebar-phase1">
+                    <div class="sidebar-header">Phase 1: Planning & Foundations</div>
+                    <ul class="sidebar-menu">
+                        <li><a href="#phase1-overview" class="sidebar-link active">Overview</a></li>
+                        <li><a href="#phase1-step1" class="sidebar-link">1. Define Use Case</a></li>
+                        <li><a href="#phase1-step2" class="sidebar-link">2. Prepare Data</a></li>
+                        <li><a href="#phase1-step3" class="sidebar-link">3. Success Metrics</a></li>
+                        <li><a href="#phase1-step4" class="sidebar-link">4. Feasibility</a></li>
+                    </ul>
+                </div>
+
+                <!-- Phase 2 Sidebar -->
+                <div class="sidebar-section" id="sidebar-phase2" style="display: none;">
+                    <div class="sidebar-header">Phase 2: Development & Training</div>
+                    <ul class="sidebar-menu">
+                        <li><a href="#phase2-overview" class="sidebar-link active">Overview</a></li>
+                        <li><a href="#phase2-step1" class="sidebar-link">3. Choose Platform</a></li>
+                        <li><a href="#phase2-step2" class="sidebar-link">4. Build Model</a></li>
+                        <li><a href="#phase2-step3" class="sidebar-link">5. Create UI</a></li>
+                        <li><a href="#phase2-step4" class="sidebar-link">6. Test & Validate</a></li>
+                    </ul>
+                </div>
+
+                <!-- Phase 3 Sidebar -->
+                <div class="sidebar-section" id="sidebar-phase3" style="display: none;">
+                    <div class="sidebar-header">Phase 3: Deployment & Operations</div>
+                    <ul class="sidebar-menu">
+                        <li><a href="#phase3-overview" class="sidebar-link active">Overview</a></li>
+                        <li><a href="#phase3-step1" class="sidebar-link">7. Deploy Production</a></li>
+                        <li><a href="#phase3-step2" class="sidebar-link">8. Monitor & Optimize</a></li>
+                        <li><a href="#phase3-step3" class="sidebar-link">9. Scale Solution</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="docs-main">
+                <!-- Phase 1 Content -->
+                <div class="tab-content active" id="phase1">
+                    <div class="content-section" id="phase1-overview">
+                        <h1>Phase 1: Planning & Foundations</h1>
+                        <p class="phase-meta">⏱️ <strong>~2 hours</strong> | 🟢 <strong>Beginner</strong></p>
+                        
+                        <div class="info-box">
+                            <h3>📋 What You'll Learn</h3>
+                            <ul>
+                                <li>How to identify and define AI use cases with clear ROI</li>
+                                <li>Data assessment and preparation strategies</li>
+                                <li>Setting measurable success metrics and KPIs</li>
+                                <li>Technical and financial feasibility evaluation</li>
+                            </ul>
+                        </div>
+
+                        <h2>Steps Overview</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Step</th>
+                                    <th>Duration</th>
+                                    <th>Focus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="#phase1-step1">Define AI Use Case</a></td>
+                                    <td>30 min</td>
+                                    <td>Problem identification, ROI, stakeholders</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><a href="#phase1-step2">Prepare Your Data</a></td>
+                                    <td>45 min</td>
+                                    <td>Data quality, cleaning, labeling</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="#phase1-step3">Set Success Metrics</a></td>
+                                    <td>20 min</td>
+                                    <td>KPIs, baseline, targets</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="#phase1-step4">Assess Feasibility</a></td>
+                                    <td>25 min</td>
+                                    <td>Budget, timeline, risks</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="nav-buttons">
+                            <a href="#phase1-step1" class="btn btn-primary">Start with Step 1 →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-section" id="phase1-step1" style="display: none;">
+                        <h1>Step 1: Define Your AI Use Case</h1>
+                        <p class="phase-meta">⏱️ <strong>30 minutes</strong> | 🟢 <strong>Beginner</strong></p>
+
+                        <h2>🎯 Objective</h2>
+                        <p>Identify a specific business problem that AI can solve with measurable impact.</p>
+
+                        <h2>📋 Actions</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>Task</th>
+                                    <th>What to Do</th>
+                                    <th>Output</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Identify Problem</strong></td>
+                                    <td>Document current pain points, inefficiencies, or opportunities</td>
+                                    <td>Problem statement (2-3 sentences)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Define Scope</strong></td>
+                                    <td>Set boundaries - what's in/out of scope</td>
+                                    <td>Scope document</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Identify Stakeholders</strong></td>
+                                    <td>List who will use/benefit from the solution</td>
+                                    <td>Stakeholder matrix</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Estimate ROI</strong></td>
+                                    <td>Calculate potential time/cost savings</td>
+                                    <td>ROI worksheet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h2>💡 Example Use Cases</h2>
+                        <div class="example-grid">
+                            <div class="example-card">
+                                <h4>🤖 Customer Support</h4>
+                                <p>Automate FAQ responses (save 40% support time)</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>📊 Data Analysis</h4>
+                                <p>Predict sales trends (improve forecast accuracy 25%)</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>🔍 Quality Control</h4>
+                                <p>Detect product defects (reduce errors 60%)</p>
+                            </div>
+                            <div class="example-card">
+                                <h4>📝 Content Creation</h4>
+                                <p>Generate marketing copy (3x faster production)</p>
+                            </div>
+                        </div>
+
+                        <div class="warning-box">
+                            <h3>⚠️ Common Pitfalls</h3>
+                            <ul>
+                                <li>❌ Too broad: "Improve all business operations"</li>
+                                <li>❌ No metrics: "Make customers happier"</li>
+                                <li>❌ Unrealistic: "Replace entire workforce"</li>
+                            </ul>
+                            <p><strong>✅ Good Example:</strong> "Reduce customer support ticket response time from 24 hours to 2 hours using AI chatbot, improving CSAT by 20%"</p>
+                        </div>
+
+                        <div class="nav-buttons">
+                            <a href="#phase1-overview" class="btn btn-secondary">← Back to Overview</a>
+                            <a href="#phase1-step2" class="btn btn-primary">Next: Prepare Data →</a>
+                        </div>
+                    </div>
+
+                    <!-- Additional Phase 1 step sections would go here -->
+                    <div class="content-section" id="phase1-step2" style="display: none;">
+                        <h1>Step 2: Prepare Your Data</h1>
+                        <p class="phase-meta">⏱️ <strong>45 minutes</strong> | 🟢 <strong>Beginner</strong></p>
+                        <p><em>Content from docs/getting-started/02-prepare-data.md...</em></p>
+                        <div class="nav-buttons">
+                            <a href="#phase1-step1" class="btn btn-secondary">← Previous Step</a>
+                            <a href="#phase1-step3" class="btn btn-primary">Next: Success Metrics →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-section" id="phase1-step3" style="display: none;">
+                        <h1>Step 3: Set Success Metrics</h1>
+                        <p class="phase-meta">⏱️ <strong>20 minutes</strong> | 🟢 <strong>Beginner</strong></p>
+                        <p><em>Content from docs/getting-started/03-success-metrics.md...</em></p>
+                        <div class="nav-buttons">
+                            <a href="#phase1-step2" class="btn btn-secondary">← Previous Step</a>
+                            <a href="#phase1-step4" class="btn btn-primary">Next: Feasibility →</a>
+                        </div>
+                    </div>
+
+                    <div class="content-section" id="phase1-step4" style="display: none;">
+                        <h1>Step 4: Assess Feasibility</h1>
+                        <p class="phase-meta">⏱️ <strong>25 minutes</strong> | 🟢 <strong>Beginner</strong></p>
+                        <p><em>Content from docs/getting-started/04-feasibility.md...</em></p>
+                        <div class="nav-buttons">
+                            <a href="#phase1-step3" class="btn btn-secondary">← Previous Step</a>
+                            <button class="btn btn-primary" onclick="switchTab('phase2')">Proceed to Phase 2 →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Phase 2 Content -->
+                <div class="tab-content" id="phase2" style="display: none;">
+                    <div class="content-section" id="phase2-overview">
+                        <h1>Phase 2: Development & Training</h1>
+                        <p class="phase-meta">⏱️ <strong>~4 hours</strong> | 🟡 <strong>Intermediate</strong></p>
+                        
+                        <div class="info-box">
+                            <h3>📋 What You'll Learn</h3>
+                            <ul>
+                                <li>How to choose the right AI platform and tools</li>
+                                <li>Building and training AI models</li>
+                                <li>Creating user-friendly interfaces</li>
+                                <li>Testing and validation strategies</li>
+                            </ul>
+                        </div>
+
+                        <h2>Steps Overview</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Step</th>
+                                    <th>Duration</th>
+                                    <th>Focus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>3</td>
+                                    <td><a href="#phase2-step1">Choose AI Platform</a></td>
+                                    <td>40 min</td>
+                                    <td>Azure/AWS/GCP setup</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><a href="#phase2-step2">Build AI Model</a></td>
+                                    <td>60 min</td>
+                                    <td>Train & validate</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><a href="#phase2-step3">Create UI</a></td>
+                                    <td>50 min</td>
+                                    <td>Streamlit/Gradio</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><a href="#phase2-step4">Test & Validate</a></td>
+                                    <td>45 min</td>
+                                    <td>Testing & UAT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="nav-buttons">
+                            <a href="#phase2-step1" class="btn btn-primary">Start with Step 3 →</a>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2 step sections placeholder -->
+                    <div class="content-section" id="phase2-step1" style="display: none;">
+                        <h1>Step 3: Choose Your AI Platform</h1>
+                        <p><em>Content from docs/tutorials/01-choose-platform.md...</em></p>
+                    </div>
+                </div>
+
+                <!-- Phase 3 Content -->
+                <div class="tab-content" id="phase3" style="display: none;">
+                    <div class="content-section" id="phase3-overview">
+                        <h1>Phase 3: Deployment & Operations</h1>
+                        <p class="phase-meta">⏱️ <strong>~3 hours</strong> | 🔴 <strong>Advanced</strong></p>
+                        
+                        <div class="info-box">
+                            <h3>📋 What You'll Learn</h3>
+                            <ul>
+                                <li>Production deployment strategies</li>
+                                <li>Monitoring and optimization techniques</li>
+                                <li>Auto-scaling and performance tuning</li>
+                                <li>Cost optimization and maintenance</li>
+                            </ul>
+                        </div>
+
+                        <h2>Steps Overview</h2>
+                        <table class="steps-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Step</th>
+                                    <th>Duration</th>
+                                    <th>Focus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>7</td>
+                                    <td><a href="#phase3-step1">Deploy to Production</a></td>
+                                    <td>55 min</td>
+                                    <td>Docker, CI/CD</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td><a href="#phase3-step2">Monitor & Optimize</a></td>
+                                    <td>40 min</td>
+                                    <td>Metrics, alerts</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td><a href="#phase3-step3">Scale Your Solution</a></td>
+                                    <td>50 min</td>
+                                    <td>Auto-scale, load test</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="nav-buttons">
+                            <a href="#phase3-step1" class="btn btn-primary">Start with Step 7 →</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AI Solution Builder Guide. Empowering customers to build intelligent solutions.</p>
+        </div>
+    </footer>
+
+    <script src="docs-navigation.js"></script>
+</body>
+</html>
