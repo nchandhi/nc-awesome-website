@@ -215,6 +215,81 @@ main {
     font-size: 0.95rem;
 }
 
+/* Phases Timeline */
+.phases-timeline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.phase-item {
+    flex: 1;
+    min-width: 180px;
+    padding: 1.25rem;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.phase-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.phase-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.phase-item h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+    font-size: 1rem;
+    text-align: center;
+    min-height: 2.5rem;
+}
+
+.phase-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.phase-item li {
+    padding: 0.3rem 0;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.phase-arrow {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0 0.5rem;
+    flex-shrink: 0;
+}
+
 /* Skills Grid */
 .skills-grid {
     display: grid;
@@ -447,6 +522,21 @@ footer {
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    .phases-timeline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .phase-arrow {
+        transform: rotate(90deg);
+        align-self: center;
+        padding: 0.5rem 0;
+    }
+
+    .phase-item {
+        min-width: 100%;
     }
 }
 
