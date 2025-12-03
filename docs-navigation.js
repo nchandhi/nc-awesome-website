@@ -11,11 +11,6 @@ function switchTab(tabId) {
         sidebar.style.display = 'none';
     });
     
-    // Remove active class from all tab buttons
-    document.querySelectorAll('.tab-button').forEach(button => {
-        button.classList.remove('active');
-    });
-    
     // Show selected tab content
     const selectedTab = document.getElementById(tabId);
     if (selectedTab) {
@@ -39,12 +34,6 @@ function switchTab(tabId) {
             link.classList.remove('active');
         });
         sidebar.querySelector('.sidebar-link').classList.add('active');
-    }
-    
-    // Activate clicked tab button
-    const clickedButton = document.querySelector(`[data-tab="${tabId}"]`);
-    if (clickedButton) {
-        clickedButton.classList.add('active');
     }
     
     // Update main navigation active state
@@ -96,11 +85,17 @@ function showSection(sectionId) {
     }
 }
 
-// Initialize tab buttons
-document.querySelectorAll('.tab-button').forEach(button => {
-    button.addEventListener('click', () => {
-        const tabId = button.getAttribute('data-tab');
-        switchTab(tabId);
+// Initialize navigation menu links for tab switching
+document.querySelectorAll('.nav-menu a[href*="#phase"]').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        const hash = href.split('#')[1];
+        if (hash) {
+            switchTab(hash);
+            // Update URL without page reload
+            history.pushState(null, '', href);
+        }
     });
 });
 
