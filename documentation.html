@@ -43,7 +43,7 @@
                         <li><a href="#phase2-overview" class="sidebar-link active">Overview</a></li>
                         <li><a href="#phase2-step1" class="sidebar-link">Select AI Platform & Tools</a></li>
                         <li><a href="#phase2-step2" class="sidebar-link">Create Agents & Orchestration</a></li>
-                        <li><a href="#phase2-step3" class="sidebar-link">Create Demo Interface</a></li>
+                        <li><a href="#phase2-step3" class="sidebar-link">Create User Interface</a></li>
                         <li><a href="#phase2-step4" class="sidebar-link">Validate with Stakeholders</a></li>
                     </ul>
                 </div>
@@ -617,9 +617,9 @@
                                     <td>Working agent system with validated responses</td>
                                 </tr>
                                 <tr>
-                                    <td><a href="#phase2-step3"><strong>Create Demo Interface</strong></a></td>
-                                    <td>Build simple UI (Streamlit/Gradio), integrate model, test workflow</td>
-                                    <td>Interactive demo application</td>
+                                    <td><a href="#phase2-step3"><strong>Create User Interface</strong></a></td>
+                                    <td>Build user interface, integrate agents, test workflow</td>
+                                    <td>Interactive application</td>
                                 </tr>
                                 <tr>
                                     <td><a href="#phase2-step4"><strong>Validate with Stakeholders</strong></a></td>
@@ -918,16 +918,16 @@
 
                         <div class="nav-buttons">
                             <a href="#phase2-step1" class="btn btn-secondary">← Previous Step</a>
-                            <a href="#phase2-step3" class="btn btn-primary">Next: Create Demo Interface →</a>
+                            <a href="#phase2-step3" class="btn btn-primary">Next: Create User Interface →</a>
                         </div>
                     </div>
 
                     <div class="content-section" id="phase2-step3" style="display: none;">
-                        <h1>Create Demo Interface</h1>
+                        <h1>Create User Interface</h1>
                         <p class="phase-meta">🎨 <strong>User Interface</strong></p>
 
                         <h2>🎯 Objective</h2>
-                        <p>Build a simple, functional interface to demonstrate your AI solution to stakeholders.</p>
+                        <p>Build a functional interface to interact with your AI agents and demonstrate capabilities to stakeholders.</p>
 
                         <h2>🛠️ UI Framework Options</h2>
                         <table class="steps-table">
@@ -935,105 +935,118 @@
                                 <tr>
                                     <th>Framework</th>
                                     <th>Best For</th>
-                                    <th>Effort</th>
+                                    <th>Key Features</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td><strong>Streamlit</strong></td>
-                                    <td>Python developers, rapid prototyping</td>
-                                    <td>1-2 days</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Gradio</strong></td>
-                                    <td>ML demos, quick sharing</td>
-                                    <td>1 day</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>React + FastAPI</strong></td>
-                                    <td>Production-ready, scalable</td>
-                                    <td>1-2 weeks</td>
+                                    <td><strong>React + Azure Functions</strong></td>
+                                    <td>Modern web apps, full control</td>
+                                    <td>Scalable, production-ready, customizable</td>
                                 </tr>
                                 <tr>
                                     <td><strong>Power Apps</strong></td>
-                                    <td>Low-code, Microsoft ecosystem</td>
-                                    <td>2-3 days</td>
+                                    <td>Low-code, rapid development</td>
+                                    <td>Microsoft ecosystem, drag-and-drop</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Blazor</strong></td>
+                                    <td>.NET developers, enterprise apps</td>
+                                    <td>C# full-stack, component-based</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Teams App</strong></td>
+                                    <td>Internal users, collaboration</td>
+                                    <td>Native Teams integration, familiar UX</td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <h2>📋 Demo Interface Checklist</h2>
+                        <h2>📋 User Interface Checklist</h2>
                         <div class="info-box">
                             <h4>Essential Features:</h4>
                             <ul>
-                                <li>✅ Input field/upload for user data</li>
-                                <li>✅ "Submit" or "Process" button</li>
-                                <li>✅ Clear display of AI results</li>
-                                <li>✅ Loading indicator while processing</li>
+                                <li>✅ Input field for user queries/commands</li>
+                                <li>✅ Clear display of agent responses</li>
+                                <li>✅ Conversation history or context display</li>
+                                <li>✅ Loading indicator while agents process</li>
                                 <li>✅ Error handling and user feedback</li>
-                                <li>✅ Simple, clean design (focus on functionality)</li>
+                                <li>✅ Authentication and authorization</li>
                             </ul>
                             <h4>Nice to Have:</h4>
                             <ul>
-                                <li>🔧 Example inputs pre-filled</li>
-                                <li>🔧 Confidence scores shown</li>
-                                <li>🔧 Multiple result formats (table, chart)</li>
-                                <li>🔧 Download results option</li>
+                                <li>🔧 Example prompts or commands</li>
+                                <li>🔧 Feedback mechanism (thumbs up/down)</li>
+                                <li>🔧 Export conversation or results</li>
+                                <li>🔧 Multi-modal input (text, file upload, voice)</li>
                             </ul>
                         </div>
 
-                        <h2>💡 Example Demos by Use Case</h2>
+                        <h2>💡 Example Agent UI Patterns</h2>
                         <div class="example-grid">
                             <div class="example-card">
-                                <h4>💬 Chatbot</h4>
-                                <p><strong>Interface:</strong> Chat window<br>
-                                <strong>Input:</strong> Text box<br>
-                                <strong>Output:</strong> AI response</p>
+                                <h4>💬 Conversational Agent</h4>
+                                <p><strong>Interface:</strong> Chat interface<br>
+                                <strong>Input:</strong> Natural language<br>
+                                <strong>Output:</strong> Agent responses with context</p>
                             </div>
                             <div class="example-card">
-                                <h4>🖼️ Image Classifier</h4>
-                                <p><strong>Interface:</strong> Upload area<br>
-                                <strong>Input:</strong> Image file<br>
-                                <strong>Output:</strong> Category + %</p>
+                                <h4>🤖 Task Automation Agent</h4>
+                                <p><strong>Interface:</strong> Command panel<br>
+                                <strong>Input:</strong> Task descriptions<br>
+                                <strong>Output:</strong> Status updates & results</p>
                             </div>
                             <div class="example-card">
-                                <h4>📊 Forecasting</h4>
-                                <p><strong>Interface:</strong> Form inputs<br>
-                                <strong>Input:</strong> Historical data<br>
-                                <strong>Output:</strong> Chart + numbers</p>
+                                <h4>📊 Data Analysis Agent</h4>
+                                <p><strong>Interface:</strong> Query builder<br>
+                                <strong>Input:</strong> Questions about data<br>
+                                <strong>Output:</strong> Insights & visualizations</p>
                             </div>
                             <div class="example-card">
-                                <h4>📝 Text Generator</h4>
-                                <p><strong>Interface:</strong> Prompt box<br>
-                                <strong>Input:</strong> Instructions<br>
-                                <strong>Output:</strong> Generated text</p>
+                                <h4>� RAG Agent</h4>
+                                <p><strong>Interface:</strong> Search + chat<br>
+                                <strong>Input:</strong> Questions & context<br>
+                                <strong>Output:</strong> Answers with citations</p>
                             </div>
                         </div>
 
-                        <h2>🚀 Quick Start: Streamlit Example</h2>
+                        <h2>🚀 Quick Start: React with Azure OpenAI</h2>
                         <div class="info-box" style="background-color: #f8f9fa;">
-                            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>import streamlit as st
-import openai
+                            <pre style="background-color: #2d2d2d; color: #f8f8f2; padding: 1rem; border-radius: 4px; overflow-x: auto;"><code>// React component for agent interaction
+import { useState } from 'react';
+import { OpenAIClient } from '@azure/openai';
 
-st.title("AI Support Assistant")
-user_input = st.text_input("Ask a question:")
+function AgentChat() {
+  const [message, setMessage] = useState('');
+  const [response, setResponse] = useState('');
 
-if st.button("Get Answer"):
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        messages=[{"role": "user", "content": user_input}]
-    )
-    st.write(response.choices[0].message.content)</code></pre>
+  const handleSubmit = async () => {
+    const client = new OpenAIClient(endpoint, credential);
+    const result = await client.getChatCompletions(
+      deploymentId,
+      [{ role: "user", content: message }]
+    );
+    setResponse(result.choices[0].message.content);
+  };
+
+  return (
+    &lt;div&gt;
+      &lt;input value={message} onChange={(e) => setMessage(e.target.value)} /&gt;
+      &lt;button onClick={handleSubmit}&gt;Send&lt;/button&gt;
+      &lt;div&gt;{response}&lt;/div&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
                         </div>
 
                         <div class="warning-box">
-                            <h3>⚠️ Demo Best Practices</h3>
+                            <h3>⚠️ UI Best Practices</h3>
                             <ul>
-                                <li><strong>Keep it Simple:</strong> Focus on core functionality, not fancy UI</li>
-                                <li><strong>Use Real Data:</strong> Demo with actual business scenarios</li>
-                                <li><strong>Show Confidence:</strong> Display accuracy/confidence scores</li>
-                                <li><strong>Handle Errors:</strong> Don't crash on bad input</li>
-                                <li><strong>Make it Fast:</strong> <3 second response time</li>
+                                <li><strong>Focus on User Experience:</strong> Clear, intuitive interactions with agents</li>
+                                <li><strong>Use Real Scenarios:</strong> Test with actual business use cases</li>
+                                <li><strong>Provide Transparency:</strong> Show which agent is responding and why</li>
+                                <li><strong>Handle Errors Gracefully:</strong> Clear error messages and recovery options</li>
+                                <li><strong>Optimize Performance:</strong> Fast response times and smooth interactions</li>
                             </ul>
                         </div>
 
