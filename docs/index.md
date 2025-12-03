@@ -15,7 +15,7 @@ Welcome to the **AI Solution Builder** comprehensive guide! This documentation w
     - **Next Step** - Start with fundamentals
     - **Learn** - Understand AI concepts and planning
 
-    **✅ [Start Learning →](./getting-started/index.md)**
+    **✅ [Start Learning →](./business-scenario/index.md)**
 
 === "EXPERIENCED DEVELOPER"
 
@@ -26,7 +26,7 @@ Welcome to the **AI Solution Builder** comprehensive guide! This documentation w
     - **Advanced** - Scaling and optimization
     - **Reference** - Best practices and patterns
 
-    **✅ [Build Your Solution →](./tutorials/index.md)**
+    **✅ [Build Your Solution →](./build-poc/index.md)**
 
 ---
 
@@ -51,9 +51,9 @@ By following this documentation, you'll be able to:
 
 | Section | Topics | Duration | Level |
 |---------|--------|----------|-------|
-| [Getting Started](./getting-started/index.md) | **Planning & Foundations** | 2-3 hours | 🟢 Beginner |
-| [Tutorials](./tutorials/index.md) | **Build & Deploy** | 4-6 hours | 🟡 Intermediate |
-| [Advanced](./advanced/index.md) | **Scale & Optimize** | 3-4 hours | 🔴 Advanced |
+| [Business Scenario](./business-scenario/index.md) | **Planning & Foundations** | 2-3 hours | 🟢 Beginner |
+| [Build PoC](./build-poc/index.md) | **Build & Deploy** | 4-6 hours | 🟡 Intermediate |
+| [Scale to Production](./scale-to-production/index.md) | **Scale & Optimize** | 3-4 hours | 🔴 Advanced |
 
 ---
 
@@ -86,7 +86,7 @@ To follow this guide, you'll need:
 
 - [View on GitHub](https://github.com/nchandhi/nc-awesome-website) - Repository home
 - [Browse Documentation](https://github.com/nchandhi/nc-awesome-website/tree/main/docs) - All guides
-- [Getting Started](./getting-started/index.md) - Begin here
+- [Business Scenario](./business-scenario/index.md) - Begin here
 - [Build Steps](../projects.html) - Visual step-by-step guide
 - [Resources](../contact.html) - Tools and platforms
 
@@ -94,4 +94,4 @@ To follow this guide, you'll need:
 
 !!! tip "Ready to Begin?"
     
-    Start with our [Getting Started Guide](./getting-started/index.md) to learn the basics!
+    Start with our [Business Scenario Guide](./business-scenario/index.md) to learn the basics!
